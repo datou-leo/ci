@@ -3,6 +3,9 @@ ci是一个基于codeigniter2.2.6开发的快速后台开发框架
 backend文件夹为ci扩展项目
 项目结构:backend
 
+目录结构
+
+<pre>
 ci  WEB部署目录
 ├─application              前台项目
 │  ├─cache                 缓存目录
@@ -55,4 +58,4 @@ ci  WEB部署目录
 ├─LICENSE.txt              授权说明文件
 ├─README.md                README 文件
 └─index.php                前台的入口文件
-
+</pre>
