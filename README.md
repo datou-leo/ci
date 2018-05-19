@@ -86,8 +86,11 @@ ci  WEB部署目录
 密　码：123456
 
 <h2>作者长期从事PHP开发</h2>
-昵称:datou
-qq:2323178881
-Tel:18329123270
-微信:datou-leo
-ci使用开发群:646864389
+<pre>
+<ul>
+<li>昵称:datou</li>
+<li>qq:2323178881</li>
+<li>Tel:18329123270</li>
+<li>微信:datou-leo</li>
+<li>ci使用开发群:646864389</li>
+<pre>
