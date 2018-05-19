@@ -19,7 +19,7 @@ ci  WEB部署目录
 │  ├─models                模型文件目录
 │  └─view                  视图文件目录        
 ├─backend                  ci扩展项目目录
-│  ├─application           前台项目
+│  ├─application           后台项目
 │  │  ├─cache              缓存目录
 │  │  ├─config             应用配置目录
 │  │  │  ├─autoload.php    默认访问配置文件
@@ -52,7 +52,7 @@ ci  WEB部署目录
 │  ├─language              语言文件目录
 │  └─libraries             扩展库目录
 │
-├─LICENSE.txt               授权说明文件
-├─README.md                 README 文件
-└─index.php                 前台的入口文件
+├─LICENSE.txt              授权说明文件
+├─README.md                README 文件
+└─index.php                前台的入口文件
 
