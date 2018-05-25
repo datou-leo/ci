@@ -20,12 +20,35 @@ backend文件夹为ci扩展项目
   <li>无缝集成日期预览控件</li>
   <li>无缝集成文本编辑器控件</li>
   <li>网站单页管理</li>
+  <li>登录接口</li>
+  <li>退出登录接口</li>
+  <li>文章CRUD接口</li>
 </ul>
 
 目录结构
 
 <pre>
 ci  WEB部署目录
+├─api                      接口项目
+│  ├─cache                 缓存目录
+│  ├─config                应用配置目录
+│  │  ├─autoload.php       默认访问配置文件
+│  │  ├─config.php         核心配置文件
+│  │  └─database.php       数据库配置
+│  ├─controller            控制器目录
+|  |  └───v1
+│  │      ├─auth.php       登录接口
+│  │      ├─article.php    文章CRUD接口
+│  │      └─welcome.php    接口例程
+│  ├─errors                错误页面
+│  ├─helpers               助手方法文件目录
+│  ├─language              语言文件目录
+│  ├─libraries             扩展库目录
+│  ├─logs                  日志目录
+│  ├─models                模型文件目录
+│  │  ├─article_model.php  文章模型文件
+│  │  └─users_model.php    用户模型文件
+│  └─view                  视图文件目录 
 ├─application              前台项目
 │  ├─cache                 缓存目录
 │  ├─config                应用配置目录
