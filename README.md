@@ -118,3 +118,12 @@ ci  WEB部署目录
 <li>ci使用开发群:646864389</li>
 </ul>
 <pre>
+
+# 界面预览
+
+1.登录
+--
+![image](backend/upload/201805/login.png)
+
+2.首页
+![image](backend/upload/201805/welcome.png)
