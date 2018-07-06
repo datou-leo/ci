@@ -1,7 +1,6 @@
 # ci
-ci是一个基于codeigniter2.2.6开发的快速后台开发框架
-backend文件夹为ci扩展项目
-项目结构:backend
+ci一个基于codeigniter2.2 框架的后台管理系统，包括登录，角色，菜单权限等。
+codeigniter2.2.6
 
 # Todo List
 - [X] 用户登录
