@@ -97,6 +97,10 @@ class Admin_user extends CI_Controller
 		$this->load->library('category');
 		$id_tree   = $this->category->id_tree('admin_act');
 		$arr_types = $this->_get_tree_prop();
+
+
+
+
 		if($id_tree)
 		{
 			foreach ($id_tree as $k => $v)
@@ -163,6 +167,25 @@ class Admin_user extends CI_Controller
 			}
 			$form['auth'] = serialize($a);
 		}
+
+        $this->load->library('category');
+        $id_tree   = $this->category->id_tree('admin_act');
+
+
+        if($id_tree)
+        {
+            foreach ($id_tree as $k => $v)
+            {
+                foreach($form as $f=>$g){
+                    if(strpos($f,"$k") !== false){
+                        unset($form[$f]);
+                    }
+                }
+            }
+        }
+
+
+
 		if(!$this->my_model->post($form))
 		{
 			$this->form_validation->set_error('account','lang:item_put_failure');
@@ -288,6 +311,23 @@ class Admin_user extends CI_Controller
 			}
 			$form['auth'] = serialize($a);
 		}
+
+        $this->load->library('category');
+        $id_tree   = $this->category->id_tree('admin_act');
+
+
+        if($id_tree)
+        {
+            foreach ($id_tree as $k => $v)
+            {
+                foreach($form as $f=>$g){
+                    if(strpos($f,"$k") !== false){
+                        unset($form[$f]);
+                    }
+                }
+            }
+        }
+        unset($form["iframe"]);
 
 		if(!$this->my_model->put($account,$form))
 		{
